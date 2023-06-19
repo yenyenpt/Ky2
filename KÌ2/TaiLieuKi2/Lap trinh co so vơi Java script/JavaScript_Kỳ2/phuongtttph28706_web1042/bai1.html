@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1</title>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            width: 200px;
+            border: 1px solid black;
+            margin: 0 auto;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <button onclick="pause()">PAUSE</button>
+    <button onclick="start()">START</button>
+    <br>
+    <img id="anh" src="images/anh1.png" alt="">
+</div>
+</body>
+<script>
+    let img=['images/anh1.png', 'images/anh2.png','images/anh3.png','images/anh4.png','images/anh5.png']
+    let index = 0
+    let st;
+    function next(){
+        index+=1
+        if(index > img.length -1) index=0
+        document.getElementById("anh").src=img[index]
+    }
+    function start(){
+        st = setInterval(next, 1000);
+    }
+    function pause(){
+        clearInterval(st)
+    }
+    window.onload=function(){
+        st = setInterval(next, 1000);
+    }
+</script>
+</html>

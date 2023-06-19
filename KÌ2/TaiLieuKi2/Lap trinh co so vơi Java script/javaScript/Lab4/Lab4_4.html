@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Lap()">Click</button>
+    <script>
+        function Sinhvien(name, mssv, diem){
+        this.ten = name;
+        this.maso = mssv;
+        this.diem = Number(diem);
+        this.nhap = function() {
+            this.ten = prompt("Nhập tên :")
+            this.mssv = prompt("Nhập mssv : ")
+            this.diem = Number(prompt("Nhập điểm : "))
+        }
+        this.xepLoai = function(){
+            if(this.diem >= 8){
+                document.write("Giỏi")
+            } else if(this.diem >=6) {
+                document.write("Khá")
+            } else if(this.diem >= 5){
+                document.write("Trung bình")
+            } else {
+                document.write("Yếu/Kém")
+            }
+        }
+        this.hienthi = function(){
+            document.write("Họ tên: " + this.ten + "<br>")
+            document.write("Mã số sinh viên: " + this.maso + "<br>")
+            document.write("Điểm: " + this.diem + "<br><br>")
+        }
+    }
+    function Lap(){
+    for(var sv in Sinhvien) {
+        Sinhvien[sv].nhap();
+    }
+    for(var sv in Sinhvien) {
+        Sinhvien[sv].hienthi();
+        Sinhvien[sv].xeploai();
+    }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+table{
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: tahoma;
+}
+th, td {
+    border:2px solid orangered;
+    padding: 8px;
+}
+th:hover, td:hover {
+    border:2px solid orangered;
+    padding: 8px;
+    color: red;
+    font-size: 18px;
+}
+th{
+    background-color: olivedrab;
+    color: white;
+
+    font-weight: 700px;
+    line-height: 30px;
+}
+tbody{
+    font-size: 14px;
+    font-weight: 600;
+}
+tr:first-child{
+    background: yellowgreen;
+    font-weight: 600;
+}
+.text-red{
+    color: red;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+         var mang_anh=[]
+        mang_anh[1]="BANH1.jpg";
+        mang_anh[2]="BANH2.jpg";
+        mang_anh[3]="BANH3.jpg";
+        var i=0;
+        var time;
+        function next(){
+            i++;
+            document.getElementById("doianh").src=mang_anh[i]
+            if(i==mang_anh.length-1){
+                i=-1;
+            }
+        }function tinhtong() {
+        var element = document.getElementById("gia")
+        var gia = element.getAttribute("data-price")
+        var soluong = document.getElementById("soluong").value
+        document.getElementById("total").value = gia * soluong
+        tongtien()
+        }
+        function tinhtong1() {
+        var element = document.getElementById("gia1")
+        var gia = element.getAttribute("data-price")
+        var soluong = document.getElementById("soluong1").value
+        document.getElementById("total1").value = gia * soluong
+        tongtien()
+        }
+        function tongtien() {
+        var total = Number(document.getElementById("total").value)
+        var total1 = Number(document.getElementById("total1").value)
+
+        document.getElementById("sum_total").value = total + total1
+        }
+
+    </script>
+</head>
+<body>
+    <div class="all">
+        <div class="logo"><img src="LOGO.png" alt=""></div>
+
+
+        <div class="menu">
+            <div class="left">
+                <img id="doianh" src="BANH1.jpg" alt="">
+            </div>
+    
+    
+            <div class="click"> 
+                <input type="button" value="1" onclick="next()">
+                <input type="button" value="2" onclick="next()">
+                <input type="button" value="3" onclick="next()">
+            </div>
+    
+            <div class="right">
+                <h4>Bánh Ngọt Pháp La Pomme </h4><br>
+               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Rem molestiae consectetur quibusdam maxime 
+                veniam <br> sit eius harum, recusandae natus possimus aperiam non accusantium, quod deserunt asperioses 
+                similique relellat nisi expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
+                molestiae consectetur quibusdam maxime veniam sit eius harum,recusandae</p> <br>
+                <p><a href="">Chi tiết</a></p>
+            </div>
+        </div>
+    
+
+        <div class="bang">
+            <h2>Đơn mua hàng nhanh</h2> <br>
+            <table>
+                <tr>
+                <th>STT</th>
+                <th>Tên SP</th>
+                <th>Giá</th>
+                <th>Số Lượng</th>
+                <th>Thành tiền</th>
+                </tr>
+                <tr>
+                <td>1</td>
+                <td>Bánh ngọt</td>
+<td id="gia" data-price="300000">300.000 vnd</td>
+                <td><input type="text" value="" id="soluong" onkeyup="tinhtong()"></td>
+                <td class="center-text"><input value="" type="text" id="total"></td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td>Kẹo chocolate</td>
+                <td id="gia1" data-price="50000">50.000 vnd</td>
+                <td><input type="text" value="" id="soluong1" onkeyup="tinhtong1()"></td>
+                <td class="center-text"><input type="text" id="total1"></td>
+                </tr>
+                <tr>
+                <td colspan="4">Tổng tiền</td>
+                <th><input type="text" id="sum_total" disabled></th>
+                </tr>
+                </table>
+        </div>
+        
+
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

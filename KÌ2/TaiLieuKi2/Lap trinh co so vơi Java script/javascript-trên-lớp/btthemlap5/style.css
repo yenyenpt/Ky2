@@ -1,0 +1,77 @@
+.container {
+    width: 1000px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box3 {
+    width: 400px;
+}
+.box3>label {
+    float: left;
+}
+.box31 {
+    float: right;
+    margin-right: 100px;
+}
+.box32 {
+    float: right;
+}
+.box5 {
+    width: 400px;
+}
+.box5 >label{
+    float: left;
+}
+.box5>select{
+    float: right;
+    margin-right: 150px;
+}
+.button1 {
+    width: 350px;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.btn2 {
+    margin-left: 20px;
+}
+
+.box4 {
+    width: 750px;
+}
+.box4>table{
+    width: 100%;
+}
+.box2 {
+    width: 750px;
+}
+.box2>table{
+    width: 100%;
+}
+.box1{
+    width: 550px;
+}
+.box1>table{
+    width: 100%;
+}
+
+.box6{
+    width:  300px;
+}
+.box6 >input{
+    float: right;
+    height: 150px;
+}
+.box6 >label {
+    float: left;
+    margin-top: 50px;
+}
+.box2 table tr td p{
+    position: relative;
+    left: -100px;
+}
+
+.box4 table tr td p{
+    position: relative;
+    left: -75px;
+}

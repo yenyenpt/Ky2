@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body class="container">
+       <div class="box1">
+        <table>
+            <tr>
+                <td><label for="name">User name</label></td>
+                <td><input type="text" id="name"></td>
+                <td><p id="checkname"></p></td>
+            </tr>
+        
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="text" id="password"></td>
+                <td><p id="checkpassword"></p></td>
+            </tr>
+            
+            <tr>
+                <td><label for="retype">Retype Password</label></td>
+                <td><input type="text" id ="retype"></td>
+                <td><p id="checkretype"></p></td>
+            </tr>
+    </table>
+       </div>
+        <hr>
+        <div class="box2">
+            <table>
+                <tr>
+                    <td><label for="fullname">Full Name</label></td>
+                    <td><input type="text" id="fullname"></td>
+                    <td><p id="checkfullname"></p></td>
+                </tr>
+            </table>
+        </div>
+       
+        <div class="box3">
+            <label for="" id="gender">Gender</label>
+            <div class="box31">
+                <input type="radio" name="gender"> <label for="male">Male</label>
+            </div>
+            <div class="box32">
+                <input type="radio" name="gender"> <label for="female">Female</label>
+            </div>
+        </div>
+        <br>
+        <div class="box4">
+            <table>
+                <tr>
+                     <td><label for="email">Email</label></td>
+                     <td><input type="text" id="email"></td>
+                     <td><p id="checkemail"></p></td>
+                 </tr>
+                 <tr>
+                     <td><label for="telephone">Telephone</label></td>
+                     <td><input type="text" id="telephone" onblur="checknum(this.value)"></td>
+                     <td> <p id="checktelephone"></p></td>
+                 </tr>
+                 <tr>
+                     <td><label for="address">Address</label></td>
+                     <td><input type="text" id="address"></td>
+                     <td> <p id="checkaddress"></p></td>
+               </tr>
+             </table>
+        </div>
+        <br>
+        <div class="box5">
+            <table>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td><select name="country" id="country">
+                        <option value="0">Chọn quốc gia</option>
+                        <option value="1">Việt Nam</option>
+                        <option value="2">Nhật Bản</option>
+                        <option value="3">Anh</option>
+                        <option value="4">Pháp</option>
+                    </select></td>
+                    <td><p id ="checkcountry"></p></td>
+                </tr>
+            </table>
+            <br><br>
+        </div>
+        <div class="box6">  
+                    <label for="description">description</label>
+                    <input type="text" id="description">
+                    <p id="checkdescription"></p> 
+        </div>
+        <div class="button1">
+            <button class="btn1" onclick="reset()">Reset</button>
+            <button class="btn2" onclick="submit()">Submit</button>
+        </div>
+    </body>
+</html>

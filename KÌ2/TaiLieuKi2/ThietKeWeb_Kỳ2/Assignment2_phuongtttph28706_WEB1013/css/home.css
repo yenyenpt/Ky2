@@ -1,0 +1,42 @@
+h2{
+    font-size: x-large;
+    color: lightslategray;
+    font-family: Tahoma;
+}
+p{
+    font-size: large;
+}
+iframe{
+    width: 97%;
+    height: 400px;
+    margin-left: 10px;
+}
+.pic > img {
+    max-width: 98%;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.new{
+    box-sizing: border-box;
+    width: 48%;
+    border: 1px solid gray;
+    margin-left: 10px;
+}
+.viền{
+    box-sizing: border-box;
+    width: 47%;
+    background-color: orangered;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px grey;
+    margin-left: 9px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+a{
+    color: white;
+    font-size: medium;
+
+}

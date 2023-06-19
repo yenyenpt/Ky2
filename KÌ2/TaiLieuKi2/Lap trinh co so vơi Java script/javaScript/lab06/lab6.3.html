@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 3</title>
+    <style>
+        input{  
+            margin: 10px;
+        }
+    </style>
+    <script src="js/lab6.3.js"></script>
+</head>
+
+<body>
+    <h1>ĐẶT HÀNG</h1>
+    <form>
+        Sản Phẩm:
+        <input type="text" id="san_pham"><br>
+        Loại:
+        <select id="loai">
+            <option></option>
+            <option>Máy tính</option>
+            <option>Điện thoại</option>
+        </select><br>
+        Đơn giá:
+        <input type="text" id="don_gia"><br>
+        Nơi nhận hàng:
+        <input type="radio" name="nh" onclick="hien_thi(false)"><label for="nh">Nội thành</label>
+        <input type="radio" name="nh" onclick="hien_thi(true)"><label for="nh">Ngoại thành</label><br>
+        <p id="phi_vc" style="display:none">
+            <label>Phí vận chuyển</label>
+            <input value="100000" readonly />
+        </p>
+        <hr>
+        <button onclick="kiem_tra();">Đặt mua</button>
+    </form>
+
+</body>
+
+</html>

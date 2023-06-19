@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>timer</title>
+    <script>
+        function dong_ho() {
+            var now = new Date();
+            var h = now.getHours();
+            var m = now.getMinutes();
+            var s = now.getSeconds();
+            // lặp lại hàm dong_ho sau 1s
+            setTimeout("dong_ho()", 1000);
+            var tg = +h + ":" + m + ":" + s;
+            //đưa thông tin lên web
+            //truy cập vào id a, dẫn text time
+            document.getElementById('a').innerHTML = tg;
+        }
+    </script>
+</head>
+
+<body>
+    <label id="a"></label>
+    <script>
+        dong_ho();
+    </script>
+</body>
+
+</html>

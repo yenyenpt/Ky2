@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>trang chu</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body class = "container">
+                <header>
+                  <img src="image/logo.jpeg" alt="#">
+                  
+                <form action="">
+                    <input type="text" required placeholder="search">
+                    <button>Đăng nhập</button>
+                </form>
+                  
+                </header>
+            
+            <nav>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="">Đào tạo</a></li>
+                        <li><a href="#">Tuyển sinh</a></li>
+                        <li><a href="#">Hoặt đông</a></li>
+                        <li><a href="slideanh.html">Slide Ảnh</a></li>
+                    </ul>
+            </nav>
+            <div id="banner">
+                    <img src="image/tuyensinh.jpeg" alt="#">      
+            </div>
+            <article>
+                <div class="form">
+                    <h1>ĐĂNG KÍ TÀI KHOẢN</h1>
+                    <h3>Thông tin cơ bản</h3>
+                    <p style="opacity: 0.5">Vui lòng nhập đầy đủ các thông tin bên dưới để tạo tài khoảng mới, các mục có dấu(*) là bắt buộc.</p>
+                   <div class="box">
+                        <div class="textthongtin">
+                            <p>Tên đăng nhập<strong style ="color: red">(*)</strong></p>
+                            <p>Mật khẩu<strong style ="color: red">(*)</strong></p>
+                            <p>Nhập lại mật khẩu<strong style ="color: red">(*)</strong></p>
+                            <p>Tên<strong style ="color: red">(*)</strong></p>
+                            <p>Họ và chữ lót<strong style ="color: red">(*)</strong></p>
+                            <p>Ngày sinh<strong style ="color: red">(*)</strong></p>
+                            <p>Email<strong style ="color: red">(*)</strong></p>
+                            <P>Phone<strong style ="color: red">(*)</strong></P>
+                        </div>
+                        <div class ="onhap">
+                            <input type="text" id="tendn">
+                            <input type="text" id="password">
+                            <input type="text" id="cdpassword">
+                            <input type="text" id="name">
+                            <input type="text" id="hodem">
+                            <input type="date" id="datebith">
+                            <input type="text" id="email">
+                            <input type="text" id="phone">
+                        </div>
+                        <div class="oloi">
+                            <p id="error1"></p>
+                            <p id="error2"></p>
+                            <p id="error3"></p>
+                            <p id="error4"></p>
+                            <p id="error5"></p>
+                            <p id="error6"></p>
+                            <p id="error7"></p>
+                            <p id="error8"></p>
+                        </div>
+                   </div>
+                </div>
+                <div class="button">
+                    <button id="btn1" onclick="dangki()">Đăng ký</button>
+                    <button id="btn2" onclick="reset()">Làm lại</button>
+                </div>
+            </article>
+            <footer>
+                FPT POLYTECHNIC - NAM TỪ LIÊM - TRỊNH VĂN BÔ.
+            </footer>
+       
+    </body>
+</html>

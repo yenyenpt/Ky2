@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sinh vien</title>
+    <script>
+        var sv = new Object();
+        sv.hoTen = prompt("Họ tên: ").toUpperCase();
+        sv.diem = prompt("Điểm: ");
+        sv.HienThi = function() {
+            if (this.diem >= 5) {
+                this.hocLuc = "đậu";
+            } else {
+                this.hocLuc = "rớt";
+            }
+            document.write("<h3> Họ và tên: " + this.hoTen + "<h3>");
+            document.write("<h3> Điểm TB: " + this.diem + "<h3>");
+            document.write("<h3> Học Lực: " + this.hocLuc + "<h3>");
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="sv.HienThi()">Hiển thị</button>
+</body>
+
+</html>

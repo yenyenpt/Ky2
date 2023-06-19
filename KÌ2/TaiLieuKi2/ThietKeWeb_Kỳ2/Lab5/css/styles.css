@@ -1,0 +1,70 @@
+/* Bài 1 */
+img{
+    width: 20%;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 14);
+    box-shadow: 0px 0px 7px 4px rgb(142, 142, 240);
+}
+img:hover{
+    box-shadow: 0px 0px 7px 12px red;
+    background-color: aqua;
+}
+/* Bài 2 */
+.colume{
+    width: 24%;
+    float:left
+}
+.sanpham{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px gray;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.sanpham .ten{
+    font-size: x-large;
+    font-variant: small-caps;
+    color: blue;
+    
+}
+.sanpham>img{
+    width: 80%;
+    
+}
+.sanpham .gia{
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+.sanpham .gia del{
+    color: gray;
+}
+div{display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bài 3
+
+.Colume {
+    width: 20%;
+    float: left;
+}
+
+.anh {
+    width: 200px;
+    height: 100px;
+} */

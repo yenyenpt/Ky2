@@ -1,0 +1,319 @@
+body{
+    width: 980px;
+    margin: 0px auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-image: url('../img/logo.jpg');
+    background-color: 100% 100%;
+    position: relative;
+}
+
+
+header ul  {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: pink;
+}
+
+header ul li {
+    display: inline-block;
+}
+header ul li button {
+    color: black;
+    padding: 10px 5px 10px 5px;
+    background-color: pink;
+    outline: none;
+    border: none;
+}
+header ul li button:hover {
+    background-color: rgb(97, 74, 85);
+    color: white;
+}
+.menu{
+    width: 100%;
+    background-color: pink;
+    margin-top: -15px;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 11px;
+}
+.menu ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: rgb(97, 74, 85);
+}
+.pic{
+    margin-top: -15px;
+    width: 100%;
+    height: 330px;
+    position: relative;
+}
+.pic img {
+    width: 100%;
+    height: 330px;
+}
+
+aside{
+    width: 200px;
+    height: 700px;
+    float: left;
+    background-color: pink;
+    border: 1px solid black;
+}
+.banhang, .banhang2{
+    width: 770px;
+    height: 700px;
+    float: right;
+    overflow: scroll;
+}
+
+.bangdk{
+    position: absolute;
+    bottom: 0;
+    left: 245px;
+}
+.bangdk button{
+    padding: 8px 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 20px grey;
+}
+.bangdk button:hover {
+    background-color: rgb(97, 74, 85);
+    color: white;
+}
+.con {
+    position: relative;
+    width: 770px;
+    height: 700px;
+    float: right;
+}
+.con button {
+    position: absolute;
+    bottom:18px;
+    right: 0;
+    z-index: 100;
+    color: black;
+    padding: 10px 5px 10px 5px;
+    background-color: pink;
+    outline: none;
+    border: none;
+}
+.con button:hover {
+    background-color: rgb(97, 74, 85);
+    color: white;
+}
+.tien {
+    z-index: 100;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.colume {
+    width: 25%;
+    float: left;
+}
+.sanpham{
+    border: 1px solid grey;
+    height: 330px;
+    margin: 2px 4px 35px 4px;
+    text-align: center;
+    position: relative;
+    background-color: pink;
+    box-shadow: 0 0 10px grey;
+}
+.sanpham img {
+    width: 90%;
+    margin-top: 30px;
+}
+.gia{
+    position: absolute;
+    bottom: 0px;
+    background-color: violet;
+    width: 100%;
+    line-height: 30px;
+}
+#fillter {
+    float: right;
+}
+.sanpham button {
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+.sanpham input {
+    position: absolute;
+    bottom: 30px;
+    left: 2.3px;
+}
+footer{
+    background-color: pink;
+    color: black;
+    text-shadow:  0 0 5px;
+    font-family: tahoma;
+    text-align: center;
+    float: left;
+    width: 100%;
+    line-height: 50px;
+}
+.thongtin {
+    border: 1px solid white;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.thongtin > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    display: block;
+    padding: 10px 2px 10px 30px;
+    background-color: rgb(51, 207, 212);
+    border-bottom: 1px solid white;
+}
+.thongtin > li > a:hover {
+    text-decoration: underline;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(97, 74, 85);
+}
+p{
+    width: 100%;
+    background-color: pink;
+    padding: 10px 0px 10px 0px;
+    font-family: Tahoma;
+    font-size: medium;
+    color: black;
+    text-shadow: 0 0 5px;
+}
+dialog::backdrop{
+    background: rgb(173, 172, 175, 0.5);
+}
+dialog{
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px black;
+}
+input{
+    outline: none;
+    border: 1px solid grey;
+}
+.control{
+    width: 98%;
+    padding: 5px;
+    outline: none;
+    border-radius: 3px;
+}
+.control label {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.control:focus{
+    box-shadow: 0 0 3px red;
+    border: 1px solid grey;
+}
+.button {
+    padding: 8px 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 20px grey;
+
+}
+.button:hover {
+    color: blue;
+    box-shadow: 0 0 20px rgb(97, 74, 85);
+
+}
+.button:disabled{
+    color: darkgray;
+    box-shadow: 0 0 20px gray;
+}
+form{
+    width: 355px;
+    height: 550px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.khungvitri{
+    position: absolute;
+    bottom: -17px;
+    right: 0;
+    width: 60px;
+    text-align: center;
+}
+.form{
+    margin-bottom: 30px;
+}
+.right {
+    float: right;
+    position: relative;
+}
+.right button {
+    color: white;
+    padding: 11px;
+    float: right;
+    
+    background-color: pink;
+    border: none;
+}
+.right button:hover {
+    background-color: rgb(97, 74, 85);
+    color: white;
+}
+.right button i {
+    font-size: 16px;
+}
+.right span {
+    position: absolute;
+    top: 49%;
+    right: 3%;
+    display: block;
+    padding: 1px 5px 1px 5px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: smaller;
+}
+.quay button {
+    color: black;
+    padding: 11px;
+    background-color: pink;
+    border: none;
+}
+.quay button:hover {
+    background-color: rgb(97, 74, 85);
+    text-decoration: underline;
+    color: white;
+}

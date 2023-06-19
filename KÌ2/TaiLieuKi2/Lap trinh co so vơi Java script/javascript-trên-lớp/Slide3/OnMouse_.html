@@ -1,0 +1,34 @@
+<html>
+ <head>
+<script language = "javascript">
+var num =0
+function showLink(num)
+{
+if (num==1) 
+{
+document.forms[0].elements[0].value= "You have selected Onchange";
+           }
+     if (num==2) 
+{
+document.forms[0].elements[0].value = "You have selected Onblur";
+           }
+     if (num==3) 
+{
+document.forms[0].elements[0].value = "You have selected OnLoad";
+           }
+}
+</script>
+ </head>
+<body>
+<form>
+<input type=text size=60 >
+<INPUT type = button name = text1 value=”Change Color”
+onmousedown="(document.bgColor='aqua')"
+onmouseup="(document.bgColor='limegreen')"
+
+</form>
+<a href="Onchange.html" onMouseOver="showLink(1)"document.bgcolor="green">Onchange</a><br>
+<a href="Onblur.html" onMouseOver="showLink(2)">Onblur</a><br>
+<a href="OnLoad.html" onMouseOver="showLink(3)">Onload</a><br>
+</body>
+</html>

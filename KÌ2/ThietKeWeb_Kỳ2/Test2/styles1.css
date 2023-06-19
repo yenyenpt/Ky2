@@ -1,0 +1,63 @@
+body{
+    width: 90%;
+    margin: 0 auto;
+    font-family: tahoma;
+}
+.logo{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(0, 200, 255);
+    position: relative;
+}
+.logo img{
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+ul{
+    list-style: none;
+    background-color: rgb(7, 7, 48);
+}
+li{
+    display: inline-block;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+    padding: 10px 0;
+}
+li a:hover{
+    text-decoration: underline;
+}
+.banner{
+    width: 100%;
+    height: 370px;   
+}
+.banner img{
+    width: 100%;
+}
+.login{
+    background-color: rgb(7, 7, 48);
+    padding: 10px 0;
+    margin-top: 5px;
+}
+input{
+    width: 85%;
+    border: 0;
+    outline: 0;
+    margin-left: 10px;
+    padding:5px 0;
+}
+button{
+    width: 10%;
+    padding:5px 0;
+    background-color: red;
+    color: white;
+}
+.picture1{
+    width: 47%;
+    border: 1px solid rgb(255, 85, 0);
+}

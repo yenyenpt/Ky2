@@ -1,0 +1,71 @@
+#container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    background-color: rgba(red, green, blue, alpha);
+    text-align: center;
+}
+
+h1 {
+    margin-top: 60px;
+    color: blue;
+}
+
+.box {
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    border: 1px solid gray;
+    background-color: aliceblue;
+}
+
+#start {
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 40px;
+    width: 200px;
+    background-color: aqua;
+}
+
+#reset {
+    margin-top: 30px;
+    margin-left: 40px;
+    height: 40px;
+    width: 200px;
+    background-color: aqua;
+}
+
+.box>button {
+    border: 1px solid yellow;
+    border-radius: 15px;
+}
+
+.box>button:hover {
+    color: red;
+}
+
+.box>select {
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    margin-left: 250px;
+}
+
+#element {
+    margin-top: 100px;
+    margin-left: 140px;
+    width: 760px;
+}
+
+#element span {
+    text-align: center;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: antiquewhite;
+    margin-left: 15px;
+    font-size: 40px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}

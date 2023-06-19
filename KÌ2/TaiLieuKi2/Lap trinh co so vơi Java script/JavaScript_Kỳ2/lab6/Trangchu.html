@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cửa Hàng Bánh</title>
+</head>
+<body>
+    <header>
+
+            <ul>
+                <li> <a href="">Đăng Ký</a> </li> |
+                <li> <a href="">Đăng Nhập</a> </li> 
+            </ul>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li> <a href="">Trang chủ</a> </li> |
+            <li> <a href="">Sản phẩm</a> </li> |
+            <li> <a href="">Mua hàng nhanh</a> </li> |
+            <li> <a href="">Liên hệ</a> </li> 
+        </ul>
+    </nav>
+    <div class="pic">
+        <img id="anh" src="img/Banner1.jpg" onclick="changeImg()">
+    </div>
+    <div align="center">
+        <button onclick="first()">First</button>
+        <button onclick="prev()">Prev</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="changeImg()">Run</button>
+        <button onclick="next()">Next</button>
+        <button onclick="last()">Last</button>
+    </div>
+    <aside>
+        <p>List</p>
+            <ul class="thongtin">
+                <li><a href="" >Bánh Quy</a></li>
+                <li><a href="" >Bánh Kem</a></li>
+                <li><a href="" >Bánh Donut</a></li>
+                <li><a href="" >Bánh Ngọt</a></li>
+                <li><a href="" >Bánh Su Kem</a></li>
+                <li><a href="" >Bánh Bông Lan</a></li>
+                <li><a href="" >Bánh Trứng</a></li>
+            </ul>
+    </aside>
+    <div class="banhang">
+        <div class="colume"> 
+            <div class="sanpham">
+            <p>Bánh Kem</p>
+            <img  src="img/Banh1.jpg" />
+            <button>Đặt bánh</button>
+            <div class="gia"> 
+            200000VND </div>
+            </div> 
+        </div>
+        <div class="colume"> 
+            <div class="sanpham"> 
+            <p>Bánh Hoa Quả</p>
+            <img  src="img/Banh2.jpg" />
+            <button>Đặt bánh</button>
+            <div class="gia"> 
+            250000VND 
+            </div>
+            </div> 
+        </div>
+        <div class="colume"> 
+            <div class="sanpham">
+            <p>Bánh Kem Socola</p> 
+            <img src="img/Banh3.jpg" />
+            <button>Đặt bánh</button>
+            <div class="gia"> 
+            300000VND </div>
+            </div> 
+        </div>
+        <div class="colume"> 
+            <div class="sanpham"> 
+            <p>Bánh Su Kem</p>
+            <img src="img/Banh4.jpg" />
+            <button>Đặt bánh</button>
+            <div class="gia"> 
+            250000VND</div>
+            </div> 
+        </div>
+        <div class="colume"> 
+            <div class="sanpham">
+            <p>Bánh Kem Dâu</p> 
+            <img src="img/Banh5.jpg" />
+            <button>Đặt bánh</button>
+            <div class="gia"> 
+            148000VND </div> 
+            </div> 
+        </div>
+        <div class="colume">
+            <div class="sanpham"> 
+            <p>Bánh Bông Lan</p>
+            <img src="img/Banh6.jpg" />
+            <button>Đặt bánh</button>
+            <div class="gia"> 
+            200000VND </div>
+            </div> 
+        </div>
+        <div class="colume"> 
+            <div class="sanpham"> 
+            <p>Bánh Kem Bắp Cheese</p>
+            <img src="img/Banh7.jpg" />
+            <button>Đặt bánh</button>
+            <div class="gia"> 
+            258000VND </div>   
+            </div> 
+        </div>
+        <div class="colume"> 
+            <div class="sanpham"> 
+                <p>Bánh Cherry</p>
+            <img src="img/Banh8.jpg" />
+            <button>Đặt bánh</button>
+            <div class="gia"> 
+            210000ND </div>
+            </div> 
+        </div>
+    </div>
+    <footer>
+    Trần Thị Thu Phương
+    </footer>
+</body>
+<script>
+        var index = 1;
+        var sukien;
+        var anh = ['img/Banner1.jpg','img/Banner2.jpg','img/Banner3.jpg','img/Banner4.jpg']
+        var gt = 0;
+    changeImg = function(){        
+        document.getElementById("anh").src = anh[index]
+        index++;
+        if(index==4){
+            index=0
+        }
+        sukien = setTimeout(changeImg,1000)
+    }
+    window.onload = function() {
+        sukien = setTimeout(changeImg,1000)
+    }
+
+    function stop() {
+        clearTimeout(sukien)
+    }
+    function first() {
+        document.getElementById("anh").src =anh[0]
+    }
+
+    function last(){
+        document.getElementById("anh").src =anh[anh.length-1]
+    }
+
+    function next(){
+        gt+=1;
+        if(gt > anh.length-1) gt = 0;
+        document.getElementById("anh").src=anh[gt]
+
+    }
+    function prev(){
+        gt-=1;
+        if(gt < 0) gt = anh.length-1;
+        document.getElementById("anh").src=anh[gt]
+
+    }
+</script>
+</html>

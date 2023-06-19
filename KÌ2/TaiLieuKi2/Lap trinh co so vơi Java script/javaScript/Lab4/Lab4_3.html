@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="lap()">Click</button>
+    
+</body>
+<script>
+    function SanPham(name, bill, sale){
+        this.tenSp = name;
+        this.donGia = Number(bill);
+        this.giamGia = Number(sale);
+        this.getThueNhapKhau = function() {
+            return this.donGia * 0.1;
+        }
+        this.xuat = function(){
+            document.write("tên: " + this.tenSp + "<br>")
+            document.write("Đơn Giá: " + this.donGia + "<br>")
+            document.write("Giảm giá: " + this.giamGia + "<br><br>")
+            document.write("Thuế nhập khẩu: " + this.getThueNhapKhau() + "<br><br>")
+        }
+    }
+    SanPham['sp1'] = new SanPham('Kem', '200.000', '0.44')
+    SanPham['sp2'] = new SanPham('BimBim', '100.000', '0.5')
+    SanPham['sp3'] = new SanPham('Mì', '22.000', '0.1')
+    function lap(){
+    for(var sp in SanPham) {
+        Sinhvien[sp].xuat();
+    }
+    }
+    
+</script>
+</html>

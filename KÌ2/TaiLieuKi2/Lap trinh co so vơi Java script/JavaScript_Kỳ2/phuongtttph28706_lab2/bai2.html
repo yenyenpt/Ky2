@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function dien_tich(a,b,c) {
+        var p = (a+b+c)/2;
+        var s = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+        document.write("Diện tích tam giác = " + s.toFixed(2))
+    }
+    </script>
+
+</head>
+<body>
+    <script>
+        var a,b,c;
+        do{
+        a = parseFloat(prompt("Nhập a = "));
+        b = parseFloat(prompt("Nhập b = "));
+        c = parseFloat(prompt("Nhập c = "));
+
+            if(isNaN(a,b,c) || ((a,b,c) < 0)){
+                alert("Sai cú pháp!")
+            }
+        }while(isNaN(a,b,c) || ((a,b,c) < 0))
+        if((a+b > c) || (a+c > b) || (b+c > a)){
+            dien_tich(a,b,c)
+        }else{
+            alert("3 cạnh không lập thành 1 tam giác! ")
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{margin: 0; padding: 0; box-sizing: border-box;
+}
+.all{
+    width: 980px;
+    height: auto;
+    margin: auto;
+}
+.logo{
+    background-color: rgb(150, 38, 18);
+    height: 100px;
+    text-align: center;
+    padding: 15px;
+}
+.menu{
+width: 980px;
+padding-top: 30px;
+height: 305px;
+}
+.left{
+    width: 420px;
+    float:left
+
+}
+.click{
+    width: auto;
+    float: left;
+}
+.right{
+    width: 420px;
+    height: 301px;
+    float: right;
+    background-color: rgb(150, 38, 18);
+    color: white;
+    padding: 20px 20px ;
+    font-family: sans-serif
+}
+
+.right a{ 
+    color: white;
+    float: right;
+    padding-right: 5px;
+}
+.click{
+    background-color: rgb(150, 38, 18);
+    border-radius: 5px;
+}
+.bang{
+   
+    padding-top: 30px;
+    height: 300px;
+    width: 980px;
+}
+.table {
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+ }

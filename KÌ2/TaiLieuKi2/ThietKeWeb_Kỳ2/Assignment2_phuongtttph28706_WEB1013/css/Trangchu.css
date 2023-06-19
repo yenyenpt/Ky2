@@ -1,0 +1,208 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    
+}
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.container > header{
+    background-image: url('../images/logotruong.jpg');
+    background-size: 100% 100%;
+    height: 0px;
+    padding-bottom: 40%;
+    position: relative;
+}
+.container > header > img {
+    position: absolute;
+    width: 120px;
+    top: 0px;
+    left:0px;
+}
+.lienhe{
+    position: absolute;
+    width: 600px;
+    height: 40px;
+    bottom: 0px;
+    right: 0px;
+    border-top-left-radius: 30px;
+    background-color: orangered;
+    text-align: center;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 10px lightblue;
+    color: white;
+}
+.lienhe > a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    line-height: 50px;
+}
+.lienhe > a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+.lienhe >img{
+    width: 20px;
+}
+.container > nav {
+    line-height:40px;
+    background-color:orangered;
+    font-variant:small-caps;
+    position: relative;
+    height: 45px;
+    box-shadow: 0px 0px 10px lightblue;
+}
+.them{
+    display: none;
+    position: absolute;
+    border-radius: 3px;
+    width: 200px;
+    background-color: orangered;
+    box-shadow: 0px 0px 1px gray;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid orangered;
+    left: -5px;
+    list-style: none;
+}
+.them > li > a {
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-left: 16px;
+    background-color: orangered;
+}
+.them > li > a:hover {
+    display: block;
+    text-decoration: underline;
+    border-bottom: 1px solid orange;
+    color: yellow;
+    background-color: olivedrab;
+    
+}
+.linkmenu > ul > li:hover > .them{
+    display: block;
+    z-index: 999;
+}
+.linkmenu{
+    width: 533px;
+    float: left;
+}
+.linkmenu > ul > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: large;
+    margin: 0;
+    margin-left: -3px;
+    border-right: 1px solid white;    
+    padding: 0px 14px 5px 14px;
+}
+.linkmenu > ul {
+    list-style: none;
+    width: 500px;
+    padding: 0px 0px 0px 3px;
+    margin: 0;
+    float: left;
+}
+.linkmenu > ul > li {
+    display: inline-block;
+    position: relative;   
+}
+marquee {
+    max-width: 100%;
+    padding: 20px 0px;
+    z-index: 0;
+}
+.linkmenu > ul > li > a:hover {
+    color: yellow;
+    text-decoration: underline;
+    background-color: olivedrab;
+}
+.find{
+    position: absolute;
+    right: 2px;
+}
+.find > input {
+    border-radius: 0px;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    padding: 2px;
+    padding-left: 10px;
+}
+.container > article {
+    height: 870px;
+    width:71.89%;
+    background-color:white;
+    float:left;
+    border: 1px solid gray;
+}
+.container > aside {
+    height: 800px;
+    width:27%;
+    background-color:lightgray;
+    float:right;
+}
+.container > aside > img {
+    width: 100%;
+}
+.container > aside > p {
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    background-color: orangered;
+    margin: 0px;
+}
+.thongtin {
+    border: 1px solid orangered;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.thongtin > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    display: block;
+    padding: 10px 2px 10px 30px;
+    background-color: rgb(51, 207, 212);
+    border-bottom: 1px solid orangered;
+}
+.thongtin > li > a:hover {
+    text-decoration: underline;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    background-color: orangered;
+}
+.container > footer {
+    border-top:5px double orangered;
+    padding: 10px 0px;
+    background-color:lightgoldenrodyellow;
+    text-align:center;
+    font-variant:small-caps;
+    clear:both;
+    text-align: left;
+    font-size: large;
+    font-style: italic;
+    position: relative;
+}
+.container > footer > img {
+    position: absolute;
+    right: 200px;
+    top: 40px;
+    width: 100px;
+}
+.page {
+    width: 100%;
+    min-height: 870px;
+}
+.fanpage{
+    width: 100%;
+    
+}

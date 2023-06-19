@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <form id="use-form">
+        <div>
+            <label for="name">Họ và tên</label>
+            <input name="name" type="text" placeholder="Họ và tên">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input name="email" type="text" placeholder="email">
+        </div>
+        <div>
+            <label for="phone">Số điện thoại</label>
+            <input name="phone" type="text" placeholder="Số điện thoại">
+        </div>
+        <button id="dvd-supmit">Gửi thông tin</button>
+        <h2>Danh sách</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th width="2%">Stt</th>
+                    <th width="20%">Họ Và Tên</th>
+                    <th width="20%">Email</th>
+                    <th width="20%">Phone</th>
+                </tr>
+            </thead>
+            <tbody id="dvd-table">
+            </tbody>
+        </table>
+    </form>
+    <script>
+        var useForm = document.querySelector("#use-form");
+        var dvdsupmit = document.querySelector("#dvd-supmit");
+        var dvdtable = document.querySelector("dvd-table")
+
+        var use = [];
+        dvdsupmit.onclick = function(event) {
+            event.preventDefault();
+            var name = useForm["name"].value;
+            var email = useForm["email"].value;
+            var phone = useForm["phone"].value;
+            // alert(`
+            // xin chao: ${name}
+            // email: ${email}
+            // phone: ${phone}
+            // `)
+            var user = {
+                name: name,
+                email: email,
+                phone: phone
+            }
+            use.push(user);
+            render();
+        };
+
+        function render() {
+            var content = "";
+            for (var i = 0; i < use.length; i++) {
+                content += `
+        <tr>
+            <td>${i + 1}</td>
+            <td>${use[i].name}</td>
+            <td>${use[i].email}</td>
+            <td>${use[i].phone}</td>
+            <td>
+                <button>X</button>
+            </td>
+        </tr>
+                `;
+            }
+            dvdtable.innerHTML = content;
+        }
+    </script> -->
+    <h2>Form</h2>
+    <form id="user-form">
+        <div class="group">
+            <label for="name">Họ và Tên</label>
+            <input name="name" type="text" placeholder="Họ và Tên" />
+        </div>
+        <div class="group">
+            <label for="email">Email</label>
+            <input name="email" type="text" placeholder="Email" />
+        </div>
+        <div class="group">
+            <label for="phone">Số điện thoại</label>
+            <input name="phone" type="text" placeholder="Số điện thoại" />
+        </div>
+<button id="btn-submit">Gửi thông tin</button>
+    </form>
+    <!-- Content -->
+    <h2>Thông tin người dùng</h2>
+    <table border="">
+        <thead>
+            <tr>
+                <td width="10%">STT</td>
+                <td width="30%">Tên</td>
+                <td width="30%">Email</td>
+                <td width="20%">Số điện thoại</td>
+                <td width="10%">Xoá</td>
+            </tr>
+        </thead>
+        <tbody id="user-table"></tbody>
+    </table>
+    <script>
+        // Declaration
+        var userForm = document.querySelector("#user-form");
+        var btnSubmit = document.querySelector("#btn-submit");
+        var userTable = document.querySelector("#user-table");
+
+        // var formField = ["name", "email", "phone"];
+        var users = [];
+        btnSubmit.onclick = function(event) {
+            event.preventDefault();
+            // console.log(userForm, "btnSubmit");
+            var name = userForm["name"].value;
+            var email = userForm["email"].value;
+            var phone = userForm["phone"].value;
+            // String interpolation
+            // userTable.innerHTML += `
+            // <tr>
+            //   <td>1</td>
+            //   <td>${name}</td>
+            //   <td>${email}</td>
+            //   <td>${phone}</td>
+            // </tr>
+            // `;
+            var user = {
+                name: name,
+                email: email,
+                phone: phone
+            };
+            users.push(user);
+            render();
+        };
+
+        function render() {
+            var content = "";
+            for (var i = 0; i < users.length; i++) {
+                content += `
+      <tr>
+        <td>${i + 1}</td>
+        <td>${users[i].name}</td>
+        <td>${users[i].email}</td>
+        <td>${users[i].phone}</td>
+        <td>
+          <button>X</button>
+        </td>
+      </tr>
+      `;
+            }
+            userTable.innerHTML = content;
+        }
+    </script>
+
+</body>
+
+</html>

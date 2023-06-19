@@ -1,0 +1,155 @@
+h1 {
+    color: blue;
+}
+img {
+    height: 80%;
+    width: 80%;
+}
+body.container {
+    max-width:1000px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+header>img {
+    position: relative;
+    left: 20px;
+    top: 50px;
+    width:170px;
+    height: 70px;
+}
+header>form {
+    position: relative;
+    text-align: right;
+    top :0px;
+    right: 20px;
+}
+header {
+    border: 1px solid gray;
+    width:1000px;
+    display: inline-block;
+    height:180px;
+    background-color: aquamarine;
+}
+nav{
+    height:60px;
+    border: 1px solid gray;
+    background-color: blue;
+}
+nav>ul>li {
+    display: inline-block;
+}
+nav>ul {
+    text-align: center;
+    line-height: 30px;
+}
+nav>ul>li>a {
+    font-size:25px;
+    color:aliceblue;
+    margin: 20px;
+    text-decoration: none;
+}
+nav>ul>li>a:hover {
+    color:red;
+}
+div#banner {
+    height: 250px;
+    border: 1px solid gray;
+    margin: auto;
+}
+div#banner img {
+    position: relative;
+    margin:0px;
+    top: 0px;
+    width:1000px;
+    height: 250px;
+}
+
+article {
+    height:700px;
+    border: 1px solid gray;
+}
+
+footer {
+    border: 1px solid gray;
+    height:100px;
+    background-color:gray;
+    text-align: center;
+    line-height: 90px;
+}
+.form {
+    margin-left: 100px;
+    width: 100%;
+    height: 500px;
+}
+.box{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    justify-content: space-between;
+}
+.textthongtin{
+    width: 25%;
+}
+.textthongtin> p{
+    font-weight: bold;
+}
+.onhap{
+    width: 30%;
+}
+.onhap>input{
+    height: 20px;
+    margin-top: 10px;
+    width: 250px;
+}
+.oloi{
+    width: 35%;
+
+}
+#error1 {
+    height: 5%;
+
+}
+#error2 {
+    height: 5%;
+    
+    margin-top: -2px;
+}
+#error3{
+    height: 5%;
+    
+    margin-top: -2px;
+}
+
+#error4 {
+    height: 5%;
+   
+
+}
+#error5 {
+    height: 5%;
+    
+
+}
+#error6 {
+    height: 5%;
+   
+ 
+}
+#error7 {
+    height: 5%;
+    
+
+}
+#error8 {
+    height: 5%;
+    
+
+}
+
+.button1>input{
+    height: 60px;
+    width: 200px;
+}

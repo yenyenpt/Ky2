@@ -1,0 +1,33 @@
+body{
+    margin-top: 100px;
+}
+.entry{
+    display: block;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px balck;
+    background-color: gray;
+    height: 500px;
+    margin: auto;
+    padding-top: 70px;
+    position: relative;
+}
+input{
+    margin-bottom: 50px;
+    padding: 10px;
+    padding: 10px 257px 70px 5px;
+}
+
+p{
+    padding-top: 50px;
+}
+button{
+    float: right;
+    padding: 10px;
+}
+img{
+    width: 130px;
+    position: absolute;
+    top: 30px;
+    right: 190px;
+}

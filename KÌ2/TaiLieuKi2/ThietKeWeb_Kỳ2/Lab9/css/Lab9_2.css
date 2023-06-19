@@ -1,0 +1,14 @@
+form{
+    width: 352px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 5px;
+}
+.name {
+    width: 100%;
+    box-sizing: border-box;
+}
+.datnuoc{
+    width: 100%;
+}

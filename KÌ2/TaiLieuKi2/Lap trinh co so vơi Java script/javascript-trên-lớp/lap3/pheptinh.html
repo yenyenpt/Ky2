@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANG CHU</title>
+    <script type="text/javascript">
+        function pheptinh(params) {
+            switch (dau) {
+                case '+':
+                alert("a+b="+tong);
+                break;
+                case '-':
+                alert("a-b="+hieu);
+                break;
+                case '/':
+                alert("a/b="+chia);
+                break;
+                case '*':
+                alert("a*b="+nhan);
+                break;
+                default:
+                    alert("k co gia tri");
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+      var a=prompt("moi ban nhap a:");
+    var b=prompt("moi ban nhap b:");
+    var dau=prompt("moi ban chon '+','-','/','*'");
+    var tong=Number(a)+Number(b);
+    var hieu=Number(a)-Number(b);
+    var chia=Number(a)/Number(b);
+    var nhan=Number(a)*Number(b);
+        pheptinh();
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.tong{
+    margin: auto;
+    width: 1920px;
+}
+article{
+    margin-left: 352px;
+    display: flex;
+  
+
+}
+.con1{
+    margin-left: 50px;
+}
+.con1 a{
+    font-weight: bold;
+    font-size: 20px;
+}
+.con1 p{
+    line-height: 35px;
+}
+.xam a{
+    color: gainsboro;
+    font-size: 15px;
+    font-weight: none;
+}
+
+footer img{
+    padding: 20px;
+}

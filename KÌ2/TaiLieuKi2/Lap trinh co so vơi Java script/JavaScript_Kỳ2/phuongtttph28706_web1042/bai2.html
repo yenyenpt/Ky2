@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2</title>
+    <style>
+        .khung{
+            width: 500px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="khung">
+        <h1>HOÁ ĐƠN</h1>
+        <label for="">Khách hàng</label>
+        <input id="user" type="text">
+        <span id="checkuser"></span>
+        <br>
+        <label for="">Loại hàng</label>
+        <select onchange="dongia()" id="loaihang">
+            <option value="">Chọn loại mặt hàng</option>
+            <option value="100">Loại 1</option>
+            <option value="200">Loại 2</option>
+            <option value="300">Loại 3</option>
+        </select>
+        <span id="checkhang"></span>
+        <br>
+        <label for="">Đơn giá</label>
+        <input id="dongia" type="text">
+        <br>
+        <label for="">Số lượng</label>
+        <input min="0" id="soluong" type="number">
+        <span id="checksoluong"></span>
+        <br>
+        <label for="">Thành tiền</label>
+        <input id="thanhtien" type="text">
+        <br>
+        <label for="">Nơi nhận hàng</label>
+        <input onclick="giatien()" name="vanchuyen" type="radio"> Nội Thành
+        <input onclick="giatien2()" name="vanchuyen" type="radio"> Ngoại Thành
+        <span id="checkvanchuyen"></span>
+        <br>
+        <label for="">Phí vận chuyển</label>
+        <input id="phivanchuyen" type="text">
+        <span id="checkphi"></span>
+        <br>
+        <button onclick="validate()">ĐẶT MUA</button>
+    </div>
+</body>
+<script>
+    function validate(){
+        let soDem = 0
+        //check ten khach hang
+        if(document.getElementById("user").value.length == 0){
+            document.getElementById("checkuser").innerText = "Phải nhập tên khách hàng"
+            document.getElementById("checkuser").style.color="red"
+            soDem++
+        }else{
+            document.getElementById("checkuser").innerText = ""
+        }
+        //check loai hang
+        if(document.getElementById("loaihang").value.length == 0){
+            document.getElementById("checkhang").innerText = "Phải chọn loại hàng"
+            document.getElementById("checkhang").style.color="red"
+            soDem++
+        }else{
+            document.getElementById("checkhang").innerText = ""
+        } 
+        //check so luong mua
+        if(document.getElementById("soluong").value.length == 0){
+            document.getElementById("checksoluong").innerText = "Phải chọn số lượng"
+            document.getElementById("checksoluong").style.color="red"
+            soDem++
+        }else{
+            document.getElementById("checksoluong").innerText = ""
+        }
+        //check van chuyen
+        let vc = document.getElementsByName("vanchuyen")  
+        let check = 0
+        for(let i = 0; i < vc.length; i++){
+            if(vc[i].checked) check++
+        } 
+        if(check == 0){
+            document.getElementById("checkvanchuyen").innerText = "Phải chọn nơi nhận hàng"
+            document.getElementById("checkvanchuyen").style.color="red"
+            soDem++
+        }else{
+            document.getElementById("checkvanchuyen").innerText = ""
+        }
+        if(soDem== 0){
+            alert("Đặt hàng thành công")
+        }
+    }
+    //chon noi thanh -> phi van chuyen = 0
+    function giatien(){
+        document.getElementById("phivanchuyen").value=""
+    }
+    //chon ngoai thanh -> phi van chuyen = 30000
+    function giatien2(){
+        document.getElementById("phivanchuyen").value="30000"
+    }
+    //chon loai hang tuong ung don gia
+    function dongia(){
+        let hanghoa = document.getElementById("loaihang").value
+        document.getElementById("dongia").value = hanghoa
+    }
+
+
+</script>
+</html>

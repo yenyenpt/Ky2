@@ -1,0 +1,27 @@
+table{
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: tahoma;
+}
+th, td {
+    border:2px solid grey;
+    padding: 8px;
+}
+th{
+    background-color: blue;
+    color: white;
+
+    font-weight: 700px;
+    line-height: 30px;
+}
+tr:nth-child(2n+1) {
+    background: aqua;
+}
+th:hover, td:hover {
+    border:2px solid orangered;
+    padding: 8px;
+    color: red;
+    font-size: 18px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .pic {
+            width: 100%;
+            height: 400px;
+        }
+        #picture {
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            border: 0;
+            outline: 0;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <img id="picture" src="img/Banner1.jpg">
+    </div>
+    <button onclick="Prev()">Prev</button>
+    <button onclick="Next()">Next</button>
+</body>
+<script>
+    var anh = ['img/Banner1.jpg','img/Banner2.jpg','img/Banner3.jpg','img/Banner4.jpg', 'img/Banner5.jpg'];
+    index = 1;
+    var sukien;
+    changeImg = function() {
+        document.getElementById("picture").src = anh[index]
+        index+=1;
+        if(index == 5) {
+            index = 0
+        }
+       sukien = setTimeout(changeImg, 1000)
+    }
+    window.onload = function() {
+        sukien = setTimeout(changeImg,1000)
+    }
+    function Next(){
+        index+=1;
+        if(index > anh.length-1) index = 0;
+        document.getElementById("picture").src=anh[index]    
+      
+    }
+    function Prev(){ 
+        index-=1;
+        if(index < 0) index = anh.length-1;
+        document.getElementById("picture").src=anh[index]
+        
+    }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+	<script language="JavaScript">
+		<!--- hide script from old browsers
+	   function checkNum(num) 
+	   {
+		if (num == "") 
+		{
+		 alert("Please enter a number");
+		 return false;
+		 }
+		if (isNaN (num)) 
+		{
+		 alert("Please enter a numeric value");
+		 return false;
+		}
+
+		else alert ("Thank you");
+	  }
+
+	// end hiding from old browsers -->
+   </script>
+</HEAD>
+<BODY bgColor = white>
+ <FORM>
+ <--//Trong su kien Onchange cua textbox goi ham checknum -->
+	Please enter a number: 
+<INPUT type = text size = 5 onChange="checkNum(this.value)">
+ </FORM>
+</BODY>
+</HTML>

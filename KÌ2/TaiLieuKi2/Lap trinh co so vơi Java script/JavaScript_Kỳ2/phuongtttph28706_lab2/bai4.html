@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function kiemTra(num){
+            var soDem = 0;
+            for(var i = 1; i < num; i++){
+                if(i*i == num){
+                    alert(num + " là số chính phương!")
+                    soDem = 1;
+                    break;
+                }
+            }
+            if(soDem == 0){
+                alert(num + " không phải là số chính phương!")
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <script>
+        do{
+            var num = parseInt(prompt("Nhập số nguyên dương bất kì: "))
+            if(isNaN(num) || (num < 0)){
+                alert("Sai cú pháp!")
+            }
+        }while(isNaN(num) || (num < 0))
+        kiemTra(num);
+    </script>
+</body>
+</html>

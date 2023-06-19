@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+ <SCRIPT LANGUAGE="JavaScript">
+function compute(form) 
+{
+if (confirm("Are you sure?"))
+ form.kqua.value = eval(form.expr.value)
+else
+ alert("Please come back again.")
+}
+   </SCRIPT>
+  </HEAD>
+  <BODY>
+   <FORM>
+Enter an expression:
+<INPUT TYPE="text" NAME="expr" SIZE=15 ><BR><BR>
+<INPUT TYPE="button" VALUE="Calculate" ONCLICK="compute(this.form)">
+<BR><BR><BR>
+ K&#7871;t qu&#7843;:
+<INPUT TYPE="text" NAME="kqua" SIZE=15 >
+<BR>
+ </FORM>
+</BODY>
+</HTML>

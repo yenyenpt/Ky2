@@ -1,0 +1,26 @@
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    width: 300px;
+    border: 1px solid grey;
+}
+ul li a {
+    display: block;
+    color: black;
+    border-bottom: 1px solid orangered;
+    font-size: 16pt;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: none;
+    padding: 10px 20px 10px;
+    background: url('../images/bullet.gif') no-repeat left;
+    background-size: 15px;
+}
+ul li a:hover{
+    color: white;
+    
+    background: url('../images/images.png')no-repeat left;
+    background-color: orangered;
+    background-size: 15px;
+}

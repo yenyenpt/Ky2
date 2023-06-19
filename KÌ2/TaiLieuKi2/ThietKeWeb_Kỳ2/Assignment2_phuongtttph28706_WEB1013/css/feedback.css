@@ -1,0 +1,36 @@
+h1 {
+    font-size: x-large;
+    color: lightslategray;
+    font-family: Tahoma;
+}
+.Khung{
+    width: 50%;
+    height: 420px;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 24%;
+}
+.comment{
+    width: 100%;
+    padding: 8px 15px 50px 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+.email{
+    padding: 15px 15px 15px 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+}
+img{
+    width: 60%;
+    
+}
+body{
+    text-align: center;
+}

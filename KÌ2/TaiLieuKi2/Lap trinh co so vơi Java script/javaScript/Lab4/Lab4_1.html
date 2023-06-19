@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt("Nhập 1 giá trị:"))
+        while(isNaN(a)){
+            a = Number(prompt("Nhập lại:"))
+        }
+        var x = [];
+        for(var i = 0; i < a;i++) {
+            var random = Math.round(1000*Math.random())
+            x.push(random)  
+        }
+        for(var i = 0; i < x.length; i++){
+            for(var j = i + 1; j < x.length; j++){
+                if(x[i]>x[j]){
+                    var tg = x[i];
+                    x[i]=x[j];
+                    x[j]=tg;    
+                }
+            }
+        }
+        alert("Tăng dần " + x)
+
+        for(var i = 0; i < x.length; i++){
+            for(var j = i + 1; j < x.length; j++){
+                if(x[i]<x[j]){
+                    var tg = x[i];
+                    x[i]=x[j];
+                    x[j]=tg;    
+                }
+            }
+        }
+        alert("Giảm dần " + x)
+    </script>
+</body>
+</html>
+</body>
+</html>

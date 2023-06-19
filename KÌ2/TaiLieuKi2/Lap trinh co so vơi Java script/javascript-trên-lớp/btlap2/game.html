@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>game</title>
+</head>
+
+<body>
+
+    <h2 align="center">F5 to restart!</h2>
+    <script>
+        var x, a, b;
+        var a = 10 + Math.round(5 * Math.random());
+        x = prompt("Nhập số: ");
+        if (isNaN(x) == false) {
+            if (a == x) {
+                alert("Chính xác!");
+            } else if (a < x) {
+                alert("Số lớn hơn số bí mật!");
+            } else {
+                alert("Số bé hơn số bí mật!");
+            }
+        } else {
+            alert("Bạn nhập vào k phải số!");
+        }
+    </script>
+</body>
+
+</html>

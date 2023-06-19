@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chu</title>
+    <script>
+    function doanso(){
+      if(so==sobimat){
+       alert("ban da doan dung ");
+      }
+      else if(so>sobimat){
+        alert("so cua ban lon hon so bi mat");
+      }else{
+        alert("so cua ban nho hon so bi mat");
+      }
+    }
+    </script>
+</head>
+<body>
+    <script>
+      var sobimat=Math.round(Math.random()*100);
+      var so=prompt("moi ban nhap so");
+      doanso();
+    </script>
+</body>
+</html>

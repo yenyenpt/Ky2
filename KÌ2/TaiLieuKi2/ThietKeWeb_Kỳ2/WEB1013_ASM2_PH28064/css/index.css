@@ -1,0 +1,127 @@
+
+body{
+    width: 950px;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(61, 192, 192);
+    width: 100%;
+    height: 140px;
+    position: relative;
+}
+header img {
+    width: 100px;
+    position: absolute;
+    top: 15px;
+    right: 45%;
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgb(37, 37, 54);
+    margin-top: -1px;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    font-family: tahoma;
+    text-decoration: none;
+    padding: 12px;
+    margin-left: 24px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.pic{
+    width: 100%;
+    height: 300px;
+}
+.pic img {
+    margin-top: -15px;
+    width: 100%;
+}
+.tk {
+    width: 100%;
+    background-color: rgb(37, 37, 54);
+    margin-top: -50px;
+    padding: 10px 0px 10px 0px;
+}
+.tk input {
+    outline: none;
+    width: 80%;
+    margin-left: 15px;
+    padding: 5px 0;
+}
+.tk button {
+    color: white;
+    background-color: orangered;
+    padding: 5px 20px 4px 20px;
+    margin-left: 35px;
+    border: 1px solid white;
+}
+.cl{
+    width: 50%;
+    float: left;
+}
+.k1{
+    border: 1px solid orangered;
+    margin-top: 20px;
+    width: 97%;
+    height: 344px;
+    margin-left: 5px;
+}
+.k1 img{
+    width: 430px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.k1 h3 {
+    width: 430px;
+    margin-left: 15px;
+    color: rgb(37, 37, 54);
+    font-family: tahoma;
+    font-size: medium;
+}
+.k2 img {
+    width: 430px;
+    margin-top: 45px;
+    margin-left: 15px;
+    float: left;
+}
+.k2{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 935px;
+    height: 344px;
+    border: 1px solid orangered;
+    float: left;
+}
+.k2 h3{
+    float: left;
+    color: rgb(37, 37, 54);
+    font-family: tahoma;
+    font-size: medium;
+    margin-top: 46px;
+    margin-left: 20px;
+}
+.k2 p{
+    width: 50%;
+    margin-left: 20px;
+    line-height: 35px;
+    font-family: tahoma;
+}
+footer{
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(61, 192, 192);
+    line-height: 100px;
+    height: 100px;
+    font-family: tahoma;
+    color: blue;
+}

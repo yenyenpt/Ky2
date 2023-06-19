@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            height: 30px;
+            width: 200px;
+            border: 1px solid palevioletred;
+            border-radius: 5px ;
+        }
+        h1{
+            color: palevioletred;;
+        }
+        #submit{
+            height: 30px;
+            width: 200px;
+            border: 1px solid palevioletred;
+            background-color: palevioletred;
+            border-radius: 5px ;
+            color: white;
+
+        }
+        form{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+           
+
+        }
+        td{
+            height: 30px;
+            width: 100px;
+        }
+        #xoa{
+            border: 1px solid palevioletred;
+            background-color: palevioletred;
+            border-radius: 5px ;
+            color: white;
+        }
+        #error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Thêm mới User</h1>
+        <input type="text" id="Username" placeholder="Username"><br><br>
+        <div id="errorUser"></div>
+
+        <input type="password"  id="password" placeholder="Password"><br><br>
+        <div id="errorPass"></div>
+        
+        <input type="password"  id="repassword" placeholder="Re_password"><br><br>
+        <div id="error_repassword"></div>
+
+        <input type="text" id="email" placeholder="Email"><br><br>
+        <div id="erroremail"></div>
+
+        <input list="text" id="tinhtrang" placeholder="Tình trạng"><br><br>
+        <datalist id="text">
+            <option value="1"></option>
+            <option value="2"></option>
+        </datalist>
+        <div id="ErrorTinhTrang"></div>
+
+        <button id="submit">Thêm mới</button><br><br>
+        <div id="Errorsubmit"></div><br>
+<center>
+<table border="1">
+    <thead>
+        <tr>
+            <td>Username</td>
+            <td>Password</td>
+            <td>Email</td>
+            <td>Tình trạng</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+</center>
+
+</div>
+<div id ="error"></div>
+<script src="/demo.js"></script>
+        
+</body>
+</html>

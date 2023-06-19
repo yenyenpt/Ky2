@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=var, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do{
+        var x = prompt("Nhập số dương bất kì: ")
+        if(isNaN(x) || (x < 0)){
+            alert("Không được nhập kí tự là chữ hoặc < 0!")
+        }
+        }while(isNaN(x) || (x < 0))
+        if(x % 2 == 0){
+            alert(x + " là số chẵn")
+        }else{
+            alert(x + " là số lẻ")
+        }
+    </script>
+    
+</body>
+</html>

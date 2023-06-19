@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            text-align: center;
+        }
+        h2{
+            color: aqua;
+        }
+        input,select,button{
+            height: 30px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid aqua;
+        }
+        button{
+            background: aqua;
+        }
+        #error{
+            color: red;
+        }
+        table{
+            border-collapse: collapse;
+            width: 60%;
+        }
+        #xoa{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Thêm mới user</h2>
+        <input type="text"  id="user" placeholder="User"><br><br>
+        <div id="e_user"></div>
+
+        <input type="password"  id="password" placeholder="Password"><br><br>
+        <div id="e_password"></div>
+
+        <input type="password"  id="re_password" placeholder="Re-password"><br><br>
+        <div id="e_re_password"></div>
+
+        <input type="text"  id="email" placeholder="Email"><br><br>
+        <div id="e_email"></div>
+
+
+        <select id="tinhTrang">
+            <option value="">Tình trạng</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select><br><br>
+        <div id="e_tinhTrang"></div>
+
+        <button type="submit" id="submit">Thêm mới</button><br><br>
+        <div id="e_submit"></div>
+        <div id="error"></div>
+<center>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>Username</td>
+                    <td>Password</td>
+                    <td>Email</td>
+                    <td>Tình trạng</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </center>
+    </form>
+   
+    <script src="/demo.js"></script>
+</body>
+</html>

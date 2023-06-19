@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>helo</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div>
+        <p id="canbac">allo</p>
+        <script>
+            var a, b, c, i;
+            while (true) {
+                a = parseFloat(prompt("nhập a: "));
+                i = isNaN(a);
+                if (i == false) {
+                    break;
+                }
+            }
+
+            while (true) {
+                b = parseFloat(prompt("nhập b: "));
+                i = isNaN(b);
+                if (i == false) {
+                    break;;
+                }
+            }
+
+            while (true) {
+                c = parseFloat(prompt("nhập c: "));
+                i = isNaN(c);
+                if (i == false) {
+                    break;
+                }
+            }
+
+            if (a == 0) {
+
+                if (b == 0) {
+                    if (c == 0) {
+                        document.getElementById("canbac").innerText = "phương trình vô số nghiệm";
+
+                    } else {
+                        document.getElementById("canbac").innerText = "phương trình vô nghiệm";
+                    }
+                } else {
+                    document.getElementById("canbac").innerText = 'Phuong trinh co nghiem duy nhat: ' + (-c / b)
+                }
+            } else {
+                var delta = b * b - 4 * a * c;
+
+                document.getElementById("canbac").innerText = "delta: " + delta;
+                var candelta = Math.sqrt(delta);
+                console.log(Math.sqrt(delta));
+            }
+        </script>
+    </div>
+</body>
+
+</html>

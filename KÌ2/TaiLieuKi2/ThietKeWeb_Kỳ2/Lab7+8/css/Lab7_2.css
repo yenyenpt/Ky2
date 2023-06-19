@@ -1,0 +1,50 @@
+.colume{
+    float: left;
+    width: 25%;
+}
+.sanpham{
+  
+    position: relative;
+    border: 1px solid gray;
+    margin: 4px;
+    border-radius: 10px;
+    height: 300px;
+    box-shadow: 0 0 5px grey;
+}
+.ten{
+    text-align: center;
+    font-variant: small-caps;
+    color: orangered;
+    font-size: larger;
+    margin-top: 7px;
+}
+.img{
+    max-width: 98%;
+    margin-left: 40px;
+    height: 250px;
+}
+.icon{
+    position: absolute;
+    width: 25px;
+    bottom: 4px;
+    right: 4px;
+}
+.icon img{
+    width: 20px;
+}
+.new {
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 10px;
+}
+
+.gia{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: Impact;
+    font-size: 20px;
+    color: orange;
+}

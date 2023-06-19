@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="form.css">
+        <script type="text/javascript" src="form.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="banner">
+                <img src="xBannerWeb-3.png.pagespeed.ic.IPMymwVlIA copy.png" alt="nlidung">
+            </div>
+            <div class="menuleft">
+                <ul>
+                    <li><a href="#">Tuyển Sinh</a></li>
+                    <li><a href="">Chương Trình Đào Tạo</a></li>
+                    <li><a href="#">Hoặt Động Sinh Viên</a></li>
+                    <li><a href="#">Doanh Nghiệp Tuyển Dụng</a></li>
+                </ul>
+    
+            </div>
+            <div class="menuright">
+                <div class="vmenu">
+                    <ul>
+                        <li><a href="form.html">Trang chủ</a></li>
+                        <li><a href="">Đào tạo</a></li>
+                        <li><a href="#">Tuyển sinh</a></li>
+                        <li><a href="#">Hoặt đông</a></li>
+                        <li><a href="slideanh.html">Slide Ảnh</a></li>
+                    </ul>
+                </div>
+               <div class="form">
+                   <h1>THÔNG TIN SẢN PHẨM</h1>
+                   <HR></HR>
+                   <div class="boxform">
+                       <table>
+                           <tr>
+                               <td><p class="chuxanh">Tên sách:</p> </td>
+                               <td><input type="text" id="tensach" class="input"></td>
+                               <td><p class="error" id="error1"></p></td>
+                           </tr>
+                           <tr>
+                               <td><p class="chuxanh">Nhà xuất bản: </p></td>
+                               <td><input type="text" id="nhaxuatban" class="input"></td>
+                               <td><p class="error" id="error2"></p></td>
+                           </tr>
+                           <tr>
+                               <td><p class="chuxanh">Số lượng:</p></td>
+                               <td><input type="text" id="soluong" class="input" onchange="checksoluong(this.value), tongtien()"></td>
+                               <td><p class="error" id="error3"></p></td>
+                           </tr>
+                           <tr>
+                               <td><p class="chuxanh">Đơn giá:</p></td>
+                               <td><input type="text" id="dongia" class="input" onchange="checkdongia(this.value), tongtien()"></td>
+                               <td><p class="error" id="error4"></p></td>
+                           </tr>
+                           <tr>
+                               <td><p class="chuxanh">Tổng tiền:</p></td>
+                               <td><input type="text" id="tongtien" class="input"></td>
+                               <td><p class="error" id="error5"></p></td>
+                           </tr>
+                           <tr>
+                               <td><p class="chuxanh">Ngày/tháng/năm xuất bản:</p></td>
+                               <td><input type="date" id="ngaythangnam" class="input" min="1990-01-01"></td>
+                               <td><p class="error" id="error6"></p></td>
+                           </tr>
+                           <tr>
+                               <td><p class="chuxanh">Loại sách:</p></td>
+                               <td><select name="loaisach" id="loaisach" class="input">
+                                   <option value="1">Sách thiếu nhi</option>
+                                   <option value="2">Sách khoa học kĩ thuật</option>
+                                   <option value="3">Sách văn học </option>
+                                   <option value="4">Sách lịch sử</option>
+                                   <option value="5">Sách địa lý</option>
+                                   <option value="6">Sách ngoại ngữ</option>
+                                   <option value="7">Sách pháp luật</option>
+                                   <option value="8">Sách khác</option>
+                               </select></td>
+                               <td><p class="error" id="error7"></p></td>
+                           </tr>
+                           <tr>
+                               <td><p class="chuxanh">Người nhập:</p></td>
+                               <td><input type="text" id="nguoinhap" class="input"></td>
+                               <td><p class="error" id="error8"></p></td>
+                           </tr>
+                           <tr>
+                               <td><p class="chuxanh">Sản phẩm đang có:</p></td>
+                               <td><input type="checkbox" id="trongkho" class="sanphamdangco"><label for="trongkho">Trong kho</label>
+                                    <input type="checkbox" id="bayban" class="sanphamdangco"><label>Bày bán</label> <br>
+                                    <input type="checkbox" id="chuakiemtra" class="sanphamdangco"> <label for="a">Chưa kiểm tra</label>
+                                </td>
+                               <td><p class="error" id="error9"></p></td>
+                           </tr>
+                           <tr>
+                               <td><p>Nơi nhận hàng:</p></td>
+                               <td><div class="noigiao">
+                                      <input type="radio" onclick="hienthiship1()" name="vitri"><label>Nội thành</label>
+                                        <input type="radio" onclick="hienthiship()" name="vitri"><label>Ngoại thành</label>
+                                     </div>
+                                </td>
+                               <td><p class="error" id="error10"></p></td>
+                            </tr>
+                       </table>
+                       <div class="phivn" id="phivc" style=" display: none;">
+                           <label for="">Phí vận chuyển ngoại thành: </label>
+                           <input value="30000" readonly style="width: 80px"/>
+                       </div>
+                       <div class="phivn" id="phivc1" style=" display: none;">
+                        <label for="">Phí vận chuyển nội thành: </label>
+                        <input value="0" readonly style="width: 80px"/>
+                    </div>
+                   </div>
+                   <div class="button">
+                       <button id="btn1" onclick="hienthi()">Hiển thị thông tin</button>
+                       <button id="btn2" onclick="reset()">Xoá thông tin</button>
+                   </div>
+               </div>
+                <div class="foo">
+                    <h2>Địa chỉ- Toà nhà FPT Polytechnic</h2>
+                    <p>Trinh Văn Bô - Phương Canh - Nam Từ Liêm - Hà Nôi</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

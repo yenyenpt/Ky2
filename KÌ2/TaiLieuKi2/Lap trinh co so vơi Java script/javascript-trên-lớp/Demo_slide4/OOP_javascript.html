@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> OOP Javascript</title>
+</head>
+
+<body>
+
+<!--p id="demo"></p-->
+
+<script>
+var hoaDao = new Object();
+hoaDao.mauSac = "Hong";
+hoaDao.canhHoa = "5 canh";
+hoaDao.muiThom = "khong mui";
+hoaDao.qua = "Qua To"; 
+
+hoaDao.toaHuong = function(){
+	alert("Hoa đào có màu hồng , ko có mùi");
+}
+//document.getElementById("demo").innerHTML = "hoa Đào "+hoaDao.mauSac + " va co " + hoaDao.qua + " .";
+document.write("hoa Đào "+ hoaDao.mauSac + " va co " + hoaDao.qua + " .");
+hoaDao.toaHuong();
+//=========================================== Contrucstor
+function Person(firstName,lastName,age,eyeColor,language) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+	this.language = language
+    this.speak = function (name) {
+        this.language = name;
+    }
+}
+// Create a Person object
+var myMother = new Person("Thuy","Đỗ",48,"Đen","vietnam");
+
+// Change last name
+document.writeln("\n Tên mẹ tôi là:"+myMother.firstName +" "+myMother.lastName+", Mẹ tôi nói tiếng: "+myMother.language);
+myMother.speak("Phap");
+document.write(", có thể nói tiếng "+myMother.language); 
+// Diplay last name
+document.getElementById("demo").innerHTML =
+"My mother's last name is " + myMother.speak("phap");
+</script>
+
+</body>
+
+</html>

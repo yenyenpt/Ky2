@@ -1,0 +1,71 @@
+CREATE DATABASE THI_6_4_PH28706
+
+IF OBJECT_ID('LOP') IS NOT NULL
+DROP TABLE LOP
+CREATE TABLE LOP(
+MALOP VARCHAR(50) PRIMARY KEY,
+TENLOP NVARCHAR(50),
+DIADIEM VARCHAR(50)
+);
+
+IF OBJECT_ID('SINHVIEN') IS NOT NULL
+DROP TABLE SINHVIEN
+CREATE TABLE SINHVIEN(
+MASV CHAR(10) PRIMARY KEY,
+HOTEN NVARCHAR(50),
+NGAYSINH DATE,
+GIOITINH NVARCHAR(50),
+QUEQUAN NVARCHAR(50),
+MALOP VARCHAR(50) FOREIGN KEY (MALOP) REFERENCES LOP(MALOP)
+);
+
+IF OBJECT_ID('MONHOC') IS NOT NULL
+DROP TABLE MONHOC
+CREATE TABLE MONHOC(
+MAMH CHAR(10) PRIMARY KEY,
+TENMON NVARCHAR(50),
+SOTINCHI INT
+);
+
+IF OBJECT_ID('KETQUA') IS NOT NULL
+DROP TABLE KETQUA
+CREATE TABLE KETQUA	(
+MASV CHAR(10) FOREIGN KEY (MASV) REFERENCES SINHVIEN(MASV),
+MAMH CHAR(10) FOREIGN KEY (MAMH) REFERENCES MONHOC(MAMH),
+DIEMLAN1 INT,
+DIEMLAN2 INT,
+PRIMARY KEY (MASV, MAMH),
+);
+
+INSERT INTO LOP(MALOP, TENLOP, DIADIEM) VALUES 
+('PT16355-MOB', N'LẬP TRÌNH 16.55', 'P204'),
+('PT16315-WEB', N'WEB 16.15', 'P203'),
+('PT16359-UD', N'ỨNG DỤNG 16.59', 'P202');
+
+INSERT INTO SINHVIEN(MASV,HOTEN, NGAYSINH, GIOITINH,QUEQUAN,MALOP) VALUES 
+('SV1', N'TRẦN TRIỆU VY', '2000/10/15', N'NỮ', N'HÀ NỘI', 'PT16355-MOB'),
+('SV2', N'TRẦN ĐÌNH TRỌNG', '2001/01/30', N'NAM', N'THÁI BÌNH', 'PT16315-WEB'),
+('SV3', N'TRẦN THỊ THU PHƯƠNG', '2003/08/09', N'NỮ', N'THANH HOÁ', 'PT16359-UD');
+
+INSERT INTO MONHOC(MAMH, TENMON, SOTINCHI) VALUES 
+('M1', N'CƠ SỞ DỮ LIỆU', 4),
+('M2', N'JAVA 1', 3),
+('M3', N'THỰC TẬP', 5);
+
+INSERT INTO KETQUA(MASV, MAMH, DIEMLAN1, DIEMLAN2) VALUES 
+('SV1', 'M1', 3, 8),
+('SV2', 'M1', 9, 9),
+('SV1', 'M3', 5, 7);  
+
+--Câu 2: Truy Vấn dữ liệu SQL (5đ)
+--a.	Đưa ra họ tên, tuổi các sinh viên Nữ và sinh trước năm 2001. (1đ). 
+--b.	Đưa ra thông tin danh sách các môn học của sinh viên có đệm là Đình(1đ)
+--c.	Cho biết thông tin các SV chưa có điểm môn nào. (1đ)
+--d.	Đưa ra họ tên, mã sv, điểm Trung Bình Lần2 các môn học của tất cả các sv. (1đ)
+--e.	Đưa ra họ tên, điểm lần 1, tên môn học của các sinh viên có điểm môn Java1 cao nhất.
+
+--Câu 3. Hãy viết lệnh SQL thực hiện các thao tác sau: (2đ)
+--a.	Thêm 0.5 điểm cho tất cá các sv học môn Java1 (1đ)
+
+
+--b.	 Xóa  THÔNG TIN  TRONG BẢNG KẾT QUẢ của các sv có tên là Hà (1đ)

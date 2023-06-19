@@ -1,0 +1,29 @@
+body{
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+}
+.vd1{
+	width: 70%;
+	height: 660px;
+	background-color: yellow;
+	float: left;
+}
+
+.vd2{
+	width: 30%;
+	height: 660px;
+	background-color: aqua;
+	float: right;
+
+}
+
+.anh{
+	width: 90%;
+	float: left;
+	height: 200px;
+	margin: 10px;
+}
+iframe{
+	margin-top: 10px;
+}

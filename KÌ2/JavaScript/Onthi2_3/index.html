@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            text-align: center;
+        }
+        h2{
+            color: orangered;
+        }
+        input,select,button{
+            height: 40px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid orangered;
+        }
+        button{
+            background-color: orangered;
+        }
+        #error{
+            color: red;
+        }
+        table{
+            border-collapse: collapse;
+          
+           
+        }
+        td{
+            width: 120px;
+        }
+        #xoa{
+            width: 50px;
+        }
+      
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Thêm mới user</h2>
+        <input type="text" id="user" placeholder="User"><br><br>
+        <div id="erroruser"></div>
+
+        <input type="password" id="pass" placeholder="Pass"><br><br>
+        <div id="errorpass"></div>
+
+       
+       
+        <input type="password"placeholder="Re-password" id ="Re_password"><br><br>
+        <div id ="ErrorRe_password"></div>
+
+        <input type="text" id="Email" placeholder="Email"><br><br>
+        <div id="errorEmail"></div>
+
+        <select id="tinhTrang">
+            <option value="">Tình trạng</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select><br><br>
+        <div id="errortinhTrang"></div>
+
+        <button type="submit" id="submit"> Thêm mới</button><br><br>
+        <div id="errorsubmit"></div>
+    </form>
+    <div id="error"></div>
+    <center>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Username</td>
+                <td>Password</td>
+                <td>Email</td>
+                <td>Tình trạng</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <button type="submit" id="xoa">Xoá</button>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</center>
+    <script src="/demo.js"></script>
+</body>
+</html>

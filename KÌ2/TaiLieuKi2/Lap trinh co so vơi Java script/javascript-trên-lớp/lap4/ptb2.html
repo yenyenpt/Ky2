@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ptb2</title>
+</head>
+
+<body>
+    <script>
+        var ptb2 = new Object();
+        ptb2.a = prompt("nhập hệ số a:");
+        ptb2.b = prompt("nhập hệ số b:");
+        ptb2.c = prompt("nhập hệ số c:");
+        ptb2.giai = function() {
+            if (isNaN(this.a, this.b, this.c) == false) {
+                var delta = Math.pow(this.b, 2) - (4 * this.a * this.c);
+                if (delta < 0) {
+                    alert("Phương trình vô nghiệm");
+                } else if (delta == 0) {
+                    var x = -this.b / 2 * this.a;
+                    alert("Phương trình có một nghiệm phân biệt x = " + x);
+                } else {
+                    var x1 = (-this.b + Math.sqrt(delta) / 2 * this.a);
+                    var x2 = (-this.b - Math.sqrt(delta) / 2 * this.a);
+                    alert("x1 = " + x1 + "   " + "x2 = " + x2);
+                }
+            } else {
+                alert("Bạn nhập vào phải là số, nhập lại!");
+            }
+        }
+    </script>
+    <form>
+        <button onclick="ptb2.giai()">Giải</button>
+    </form>
+
+</body>
+
+</html>

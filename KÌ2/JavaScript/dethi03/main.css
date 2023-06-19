@@ -1,0 +1,26 @@
+.container{
+    width: 980px;
+    height: 1000px;
+    margin: 0px auto;
+}
+.from{
+    width: 350px;
+    height: 400px;
+}
+input,button,select{
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+}
+select{
+    color: gray;
+}
+button{
+    background-color: orangered;
+    color: white;
+    border: 1px solid orangered;
+}
+.product{
+    width: 400px ;
+    height: 200px;
+}

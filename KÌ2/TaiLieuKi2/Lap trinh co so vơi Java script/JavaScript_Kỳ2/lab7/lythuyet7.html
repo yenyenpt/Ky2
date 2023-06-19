@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js
+"></script>-->
+<style>
+    img{width: 300px;}
+    .textdemo{
+            color: green; font-size: 30px; font-weight: bold;
+        }
+</style>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+        $("button").click(function(){
+            // $("p").hide(2000,function(){
+            //     alert("Text vua bi an!")
+            // })
+            // $("#text1").hide()
+            // $(".textC").hide()
+            // $("#box p").hide()
+            // $(".textC:first").hide()
+            // $(".textC:last").hide()
+            // $(".textC:eq(2)").hide()
+
+        //     $(".textC").each(function(){
+        //         alert($(this).text())
+        //     })
+        // })
+        $("#an").click(function(){
+            //$("#img-demo").hide(2000)
+            $("#img-demo").fadeOut(2000)
+        })
+        $("#hien").click(function(){
+            //$("#img-demo").toggle(2000)
+            $("#img-demo").fadeToggle(2000)
+        })
+        $("#anhien").click(function(){
+            //$("#img-demo").show(2000)
+            $("#img-demo").fadeIn(2000)
+        })
+    })
+</script>
+</head>
+<body>
+    <button id="demo">Demo</button>
+    <button id="an">An</button>
+    <button id="hien">Hien</button>
+    <button id="anhien">An hien</button>
+    <p>Hom nay troi nang that la dep</p>
+    <p id="text1">Doan text so 1 bang id</p>
+    <p class="textC">Doan text class so 1</p>
+    <p class="textC">Doan text class so 2</p>
+    <p class="textC">Doan text class so 3</p>
+    <p class="textC">Doan text class so 4</p>
+    <p class="textC">Doan text class so 5</p>
+    <p class="textC">Doan text class so 6</p>
+    <p class="textC">Doan text class so 7</p>
+    <div id="box">
+        <input type="text" id="name">
+        <p id="text-box">Doan text nam trong box</p>
+        <img src="anh1.png" class="img-demo">
+
+    </div>
+</body>
+</html>

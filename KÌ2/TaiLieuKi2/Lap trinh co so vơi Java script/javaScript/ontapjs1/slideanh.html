@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Slide ảnh</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styleanh.css">
+    </head>
+    <body class = "container">
+                <header>
+                    <img src="image/logo.jpeg" alt="#">
+                    
+                <form action="">
+                    <input type="text" required placeholder="search">
+                    <button>Đăng nhập</button>
+                </form>
+                    
+                </header>
+            
+            <nav>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="">Đào tạo</a></li>
+                        <li><a href="#">Tuyển sinh</a></li>
+                        <li><a href="#">Hoặt đông</a></li>
+                        <li><a href="slideanh.html">Slide Ảnh</a></li>
+                    </ul>
+            </nav>
+            <div id="banner">
+                    <img src="image/tuyensinh.jpeg" alt="#">      
+            </div>
+            <article>
+                <h1>CƠ SỞ HÀ NỘI</h1>
+                <div onload="loadanh()" class="anh">
+                    <img id="hoa" src="anh1.jpeg" />
+                    <div class="button1">
+                        <input type="button" value="Prev" onclick="back()" />
+                        <input type="button" value="Next" onclick="next()" />
+                    </div>
+                </div>
+            </article>
+            <script>
+                var anhAr = [
+                    'anh1.jpeg',
+                    'anh2.jpeg',
+                    'anh3.jpeg',
+                    'anh4.jpeg',
+                    'anh5.jpeg',
+                ];
+                var currentIndex = 0;
+        
+                function loadAnh() {
+                    for (var i = 0; i < anhAr.length; i++) {
+                        document.getElementById("hoa").src = anhAr[i];
+                    }
+        
+                }
+        
+                function next() {
+                    if (currentIndex < anhAr.length) {
+                        currentIndex++;
+                        document.getElementById("hoa").src = anhAr[currentIndex];
+                    }
+                    if (currentIndex == anhAr.length) {
+                        currentIndex = 0;
+                        document.getElementById("hoa").src = anhAr[currentIndex];
+                    }
+                }
+        
+                function back() {
+                    if (currentIndex > 0) {
+                        document.getElementById("hoa").src = anhAr[currentIndex];
+                        currentIndex--;
+                    }
+                    if (currentIndex == 0) {
+                        document.getElementById("hoa").src = anhAr[currentIndex];
+                        currentIndex = anhAr.length - 1;
+                    }
+                }
+            </script>
+            <footer>
+                FPT POLYTECHNIC - NAM TỪ LIÊM - TRỊNH VĂN BÔ.
+            </footer>
+        
+    </body>
+</html>>

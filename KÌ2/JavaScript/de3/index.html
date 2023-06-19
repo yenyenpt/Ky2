@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 200px;
+        }
+        select{
+            width: 207px;
+        }
+        button{
+            width: 207px;
+            color: white;
+            background-color: #FF5C00;
+            border: 1px solid #FF5C00;
+        }
+        table img{
+            width: 200px;
+        }
+        table{
+            display: flex;
+        }
+        #xoa{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <input type="text" placeholder="Tên sản phẩm" id="ten">
+            <div id="errorTen"></div><br>
+            <select name="" id="thuongHieu">
+                <option value="">Thương hiệu</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Oppo">Oppo</option>
+            </select>
+            <div id="errorThuongHieu"></div><br>
+            <input type="text" placeholder="Giá sản phẩm" id="gia">
+            <div id="errorGia"></div><br>
+            <input type="text" placeholder="Nơi sản xuất" id="noiSX">
+            <div id="errorNoiSX"></div><br>
+            <input type="text" placeholder="Link hình ảnh" id="link">
+            <div id="errorLink"></div><br>
+            <button type="submit" id="submit">Thêm mới sản phẩm</button>
+            <div id="error"></div>
+        </form>
+        <table>
+            
+        </table>
+
+    </div>
+    <script src="/de3/main.js"></script>
+</body>
+</html>

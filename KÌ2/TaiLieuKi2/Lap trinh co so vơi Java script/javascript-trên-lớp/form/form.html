@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>helo</title>
+    <link rel="stylesheet" href="form.css">
+    <script type="text/javascript" src="form.js">
+    </script>
+</head>
+
+<body>
+    <form action="#" name="passform">
+        <label for="email">Email(*):</label>
+        <input type="text" id="email" name="email">
+
+        <label for="password" name="">Password(*):</label>
+        <input type="text" id="password" name="password">
+
+        <label for="cpassword">Cpassword(*):</label>
+        <input type="text" id="cpassword" name="cpassword">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company">
+
+        <label for="telephone">Telephone:</label>
+        <input type="text" id="telephone" name="telephone" onChange="checkNum(this.value)">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+
+        <label for="country">country:</label>
+        <input type="text" id="country" name="country">
+        <div class="button1">
+            <button name="submit" id="submit" onclick="helo()">Submit</button>
+            <button name="clear" id="clear" onclick="xoa()">Clear</button>
+        </div>
+    </form>
+</body>
+
+</html>

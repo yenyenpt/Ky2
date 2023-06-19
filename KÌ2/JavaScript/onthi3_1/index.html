@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color: orangered;
+
+
+        }
+        input,button{
+            height: 35px;
+            width: 200px;
+            border: 1px solid orangered;
+            border-radius:5px ;
+        }
+        button{
+            background-color: orange;
+        }
+        #error{
+            color: red;
+        }
+        td{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Quản lý sản phẩm</h2>
+        <input type="text" id="tensp" placeholder="Tên sản phẩm"><br><br>
+        <div id="etensp"></div>
+
+        <input type="text" id="thuonghieu" placeholder="Thương hiệu" ><br><br>
+        <div id="ethuonghieu"></div>
+
+        <input type="text" id="gisp"  placeholder="GIá sản phẩm"><br><br>
+        <div id="egisp"></div>
+
+        <input type="text" id="noisx"  placeholder="Nơi sản xuất"><br><br>
+        <div id="enoisx"></div>
+
+        <input type="text"  id="linkhinhanh" placeholder="Link hình nhả"><br><br>
+        <div id="elinkhinhanh"></div>
+
+        <button type="submit" id="submmit">Thêm mới</button>
+        <div id="esubmmit"></div>
+    </form>
+    <div id="error"></div>
+
+    <table border="1">
+
+       
+    </table>
+    <script src="/demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>windown</title>
+    <script>
+        var wd;
+
+        function mo() {
+            // mở tab mới 
+            wd = window.open("");
+        }
+
+        function dong() {
+            if (wd.closed == false) {
+                wd.close();
+            }
+        }
+
+        function kt() {
+            if (wd.closed == false) {
+                alert("Tab mới chưa đóng");
+            } else {
+                alert("Tab mới đã đc đóng");
+            }
+        }
+    </script>
+</head>
+
+<body align="center">
+    <button id="button1" value="Open" onclick="mo()">Mở cửa sổ mới</button>
+    <button id="button2" value="Close" onclick="dong()">Đóng cửa sổ mới</button>
+    <button id="button3" value="Check" onclick="kt()">Kiểm tra cửa sổ mới đã đóng hay chưa</button>
+</body>
+
+</html>

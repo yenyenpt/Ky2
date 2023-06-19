@@ -1,0 +1,179 @@
+#wrapper {
+    width: 1024px;
+    height: 100%;
+    background-color:aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    width: 1024px;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#menu {
+    width: 1024px;
+    height: 40px;
+    background-color: orangered;
+    line-height: 40px;
+    color: White;
+}
+
+#content {
+    width: 1024px;
+    height: 600px;
+}
+
+#left {
+    margin-left: 20px;
+    width: 700px;
+    height: 600px;
+    float: left;
+    overflow: scroll;
+}
+
+pre {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#right {
+    width: 304px;
+    height: 100%;
+    background-color: wheat;
+    float: left
+}
+
+.vmenu {
+    padding: 0px;
+    margin: 5px;
+    list-style: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px gray;
+    width: 300px;
+    border: solid 1px gray
+}
+
+.vmenu a {
+    background: url(image/icon3.png) no-repeat 10px center;
+    display: block;
+    border-bottom: 1px dotted orangered;
+    color: orangered;
+    font-variant: small-caps;
+    font-size: larger;
+    text-decoration: none;
+    padding: 8px 5px 8px 30px
+}
+
+.vmenu a:hover {
+    background: url(image/icon4.png) no-repeat 10px center;
+    background-color: orangered;
+    border-bottom: 1px dotted white;
+    color: white;
+    font-weight: bold
+}
+
+.menu>ul>li {
+    display: inline-block
+}
+
+.menu>ul>li>a {
+    display: block
+}
+
+.menu>ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 3;
+    background-color: orangered;
+    text-align: center
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    color: white;
+    padding: 0 10px;
+    line-height: 40px
+}
+
+.menu>ul>li>a:hover {
+    color: yellow
+}
+
+.menu>ul>li {
+    position: relative
+}
+
+.menu ul ul {
+    position: absolute;
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 3;
+    width: 200;
+    background-color: white;
+    box-shadow: 0 0 1px gray
+}
+
+.menu ul ul a {
+    display: block;
+    line-height: 30px;
+    color: orangered;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 0 10px
+}
+
+.menu>ul>li:hover>ul {
+    display: block
+}
+
+.menu ul ul a:hover {
+    background-color: orangered;
+    color: white
+}
+
+.news img {
+    width: 300px;
+    height: 200px;
+    padding-right: 9px;
+}
+
+.news {
+    clear: left;
+    padding: 9px;
+}
+
+.dn {
+
+    line-height: 50px;
+    background: #2d53a2;
+    text-align: right;
+}
+
+.dn>a {
+    padding: auto;
+    margin-right: 10px;
+    color: white;
+}
+
+.dn>a:hover {
+    color: tomato;
+}
+#footer {
+    width: 1024px;
+    height: 160px;
+    background-color:#2d53a2;
+    float: left;
+    border-top:5px double orangered;
+    line-height:50px;
+    font-variant:small-caps;
+    text-align: center;
+    }

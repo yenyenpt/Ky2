@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do{
+            var number = parseInt(prompt("Nhập một số ngẫu nhiên[0-99]: "));
+            if(isNaN(number) || number < 0 || number > 99){
+                alert("Không đúng với điều kiện đề bài!");
+        }
+        }while(isNaN(number) || number < 0 || number > 99);
+        var random = Math.round(99*Math.random());
+        if(number == random){
+            alert("Bạn đã đoán trúng !");
+        }
+         else if(number > random){
+            alert("Số bạn vừa nhập lớn hơn sô bí mật rồi !");
+        }
+        else{
+            alert("Số bạn vừa nhập nhỏ hơn số bí mật rồi !");
+        }
+
+    </script>
+</body>
+</html>

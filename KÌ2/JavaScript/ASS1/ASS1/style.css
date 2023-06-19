@@ -1,0 +1,54 @@
+.tong{
+    margin: auto;
+    width: 1920px;
+    
+    
+}
+.chu{
+    margin-top: 137px;
+    margin-left: 352px;
+    line-height: 60px; 
+}
+button{
+    background-color: rgb(241, 59, 90);
+    color: white;
+    line-height: 17px;
+    border: none;
+    border-radius: 5px;
+}
+.dau p{
+    float: right;
+    margin-top: -90px;
+    margin-right: 100px;
+    
+}
+.anh{
+   float: right;
+   margin-right: 100px;
+   margin-top: -550px;
+
+}
+article{
+    margin-left: 352px;
+    display: flex;
+
+}
+.con1{
+    margin-left: 50px;
+}
+.con1 a{
+    font-weight: bold;
+    font-size: 20px;
+}
+.con1 p{
+    line-height: 35px;
+}
+
+
+footer img{
+    padding: 20px;
+}
+
+hr{
+    margin-left: 352px;
+}
